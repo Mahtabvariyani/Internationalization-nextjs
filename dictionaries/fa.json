@@ -1,0 +1,16 @@
+{
+  "navigation": {
+    "home": "صفحه شروع",
+    "about": "درباره ی "
+  },
+  "page": {
+    "home": {
+      "title": "خوش آمدید به NextJs i18n",
+      "description": "بین المللی سازی  در نکست جی اس"
+    },
+    "about": {
+      "title": "دشباره ی ما ",
+      "description": "ابن قفحهی دربهره ی ماست "
+    }
+  }
+}
