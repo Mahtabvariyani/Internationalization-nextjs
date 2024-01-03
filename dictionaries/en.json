@@ -1,7 +1,9 @@
 {
   "navigation": {
     "home": "Home",
-    "about": "About"
+    "about": "About",
+    "test": "Test",
+    "new": "NewPage"
   },
   "page": {
     "home": {
@@ -11,6 +13,22 @@
     "about": {
       "title": "About Us",
       "description": "This is the about page"
+    },
+    "test": {
+      "title": "About Us",
+      "description": "This is the about page"
+    }
+  },
+  "MainPage": {
+    "home": {
+      "BigText": "This is the Small Text",
+      "SmallText": "This is the big Text"
+    }
+  },
+  "neww": {
+    "main": {
+      "firstText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ad animi soluta cupiditate atque numquam ut, qui, eos, dolore ducimus animi dolorem aut hic  dolore ducimus animi dolorem aut hic ",
+      "secondText": " optio quo ducimus laudantium. In dolore ducimus animi dolorem aut hic  dolore ducimus animi dolorem aut hic  impedit? dolore ducimus animi dolorem aut hic "
     }
   }
 }

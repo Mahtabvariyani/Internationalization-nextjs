@@ -9,11 +9,19 @@ export default async function Home({
   const { page } = await getDictionary(lang)
 
   return (
-    <section className='py-24'>
-      <div className='container'>
-        <h1 className='text-3xl font-bold'>{page.home.title}</h1>
-        <p className='text-gray-500'>{page.home.description}</p>
+    <>
+      <div className='relative isolate px-6 pt-14 lg:px-8'>
+        <div className='mx-auto max-w-2xl py-32 sm:py-48 lg:py-56'>
+          <div className='text-center'>
+            <h1 className='text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl'>
+              {page.home.title}
+            </h1>
+            <p className='mt-6 text-lg leading-8 text-gray-600'>
+              {page.home.description}
+            </p>
+          </div>
+        </div>
       </div>
-    </section>
+    </>
   )
 }
