@@ -2,8 +2,8 @@
   "navigation": {
     "home": "Home",
     "about": "About",
-    "test": "Test",
-    "new": "NewPage"
+    "test": "Pictures",
+    "new": "Poem"
   },
   "page": {
     "home": {

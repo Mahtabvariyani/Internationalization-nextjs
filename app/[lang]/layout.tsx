@@ -1,10 +1,18 @@
 import './globals.css'
+import * as React from "react";
 import type { Metadata } from 'next'
 import { Locale, i18n } from '@/i18n.config'
 import Header from './components/header'
 
-import { Inter } from 'next/font/google'
-const inter = Inter({ subsets: ['latin'] })
+import { Inter as FontSans } from "next/font/google"
+
+import { cn } from "@/lib/utils"
+
+export const fontSans = FontSans({
+  subsets: ["latin"],
+  variable: "--font-sans",
+})
+
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -23,8 +31,15 @@ export default function RootLayout({
   params: { lang: Locale }
 }) {
   return (
-    <html lang={params.lang}>
-      <body className={inter.className}>
+    <html lang={params.lang} suppressHydrationWarning>
+
+      <body 
+       className={cn(
+        "min-h-screen bg-background font-sans antialiased",
+        fontSans.variable
+      )}
+      >
+        
         <Header lang={params.lang} />
         <main>{children}</main>
       </body>
