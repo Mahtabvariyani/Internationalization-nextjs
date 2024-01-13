@@ -1,6 +1,7 @@
 import { Locale } from '@/i18n.config'
 import { getDictionary } from '@/lib/dictionary'
 import {NavigationMenuDemo} from '../components/Menu'
+import Image from 'next/image'
 export default async function About({
   params: { lang }
 }: {
@@ -22,9 +23,10 @@ export default async function About({
               <NavigationMenuDemo />
               </div>
             
+
             </div>
           </div>
-          <img
+          <Image
             src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"
             alt="Product screenshot"
             className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
